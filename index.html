@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>zZZ</title>
+        <link rel="stylesheet" href="style.css">
+        <script def src="script.js"></script>
+        <script def src="chart.js"></script>
+    </head>
+    <body>
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="leftBar">ZZZ</div>
+            <ul class="rightBar">
+                <li class="item"><a href="#clock">clock</a></li>
+                <li class="item"><a href="#tracker">tracker</a></li>
+                <li class="item"><a href="#">suggestion</a></li>
+            </ul>
+        </div>
+
+       <!-- hero -->
+        <div class="hero">
+            <img class="heroImg" />
+        </div>
+
+        <!-- content -->
+        <div class="content" id="clock">
+            <div class="timeContainer">
+                <div class="clock">
+                    <div class="hand hour" id="hour"></div>
+                    <div class="hand minute" id="minute"></div>
+                </div>
+                <div class="displayTimeWraper" style="font-size: 30px;">
+                    <h3>It is now: </h3>
+                    <div class="displayTime"></div>
+                    <div>
+                        <select><option value="Hour" selected hidden>Hour</option></select>
+                        <select><option value="Minute" selected hidden>Minute</option></select>
+                        <select><option value="AM/PM" selected hidden>AM/PM</option></select>
+                    </div>
+                    <button class="addButton">Add Alarm</button>
+                </div>
+                
+            </div>
+            <div class="timeList"></div>
+            <script src="clock.js"></script>
+        </div>
+
+        <!-- Tracker -->
+        <div class="tracker" id="tracker">
+            <canvas id="myChart" style="width:100%; max-width: 700px"></canvas>
+        </div>
+
+        <!-- Suggestion -->
+        <!-- footer -->
+        <div class="footer"><div class="text">Created by Team SparkHacker 2024 🫶</div></div>
+    </body>
+</html>
