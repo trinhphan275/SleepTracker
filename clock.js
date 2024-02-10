@@ -71,8 +71,9 @@ setInterval(() => {
 
 function setAlarm() {
     if (isAlarmSet == true) {
+        console.log("clear");
         timeList.remove(timeList.lastChild);
-        addButton.textContent("Add Alarm");
+        addButton.textContent = "Add Alarm";
         isAlarmSet = false;
         return;
     }
